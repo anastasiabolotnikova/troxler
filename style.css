@@ -1,0 +1,44 @@
+.fixPoint {
+    position: relative;
+    height:5px;
+    width:5px;
+    padding: 20%;
+    margin: 0 auto;
+    top: 5%;
+}
+
+.fixPoint:before {
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    border-radius: 250px;
+    background: black;
+    content: "";
+}
+
+.circle {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    background-color: blue;
+    border-radius: 250px;
+    display: block;
+    overflow: hidden;
+    margin: -15px;
+    -webkit-filter: blur(15px);
+}
+
+h1 {text-align:center;font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+
+.c0 { transform: rotate(0deg) translate(160px); }
+.c30 { transform: rotate(30deg) translate(160px); }
+.c60 { transform: rotate(60deg) translate(160px); }
+.c90 { transform: rotate(90deg) translate(160px); }
+.c120 { transform: rotate(120deg) translate(160px); }
+.c150 { transform: rotate(150deg) translate(160px); }
+.c180 { transform: rotate(180deg) translate(160px); }
+.c210 { transform: rotate(210deg) translate(160px); }
+.c240 { transform: rotate(240deg) translate(160px); }
+.c270 { transform: rotate(270deg) translate(160px); }
+.c300 { transform: rotate(300deg) translate(160px); }
+.c330 { transform: rotate(330deg) translate(160px); }

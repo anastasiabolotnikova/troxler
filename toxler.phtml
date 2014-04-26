@@ -1,0 +1,40 @@
+<html>
+	
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+		<link rel="stylesheet" type="text/css" href="/toxler/style.css" />
+        <script type="text/javascript" src="prefixfree.min.js"></script>
+		<title>Toxler Test Environment</title>
+	</head>
+
+		<body>
+        <h1>Welcome to the Toxler Effect Test Environment</h1>
+		<div class="fixPoint">
+		<?php
+			if(isset($_POST['dist']) and isset($_POST['size']) and isset($_POST['blur'])){
+				$distance = $_POST['dist'];
+				$size = $_POST['size'];
+				$blur = $_POST['blur'];
+			} else {
+				$distance = 160;
+				$size = 10;
+				$blur = 5;
+			}
+			//$step = $size/($distance/90);
+			for ($i = 0; $i < 360; $i+=30) {
+				echo '<div class="circle" style="transform: rotate('.$i.'deg) translate('.$distance.'px);
+				width: '.$size.'px; height: '.$size.'px; -webkit-filter: blur('.$blur.'px);" ></div>';
+			}
+			
+			
+			$file = 'test_data.txt';
+			// Open the file to get existing content
+			$current = file_get_contents($file);
+			// Append a new person to the file
+			$current .= $size."\t".$distance."\t".$blur.PHP_EOL;
+			// Write the contents back to the file
+			file_put_contents($file, $current);
+		?>
+		</div>
+		</body>
+</html>
