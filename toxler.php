@@ -1,16 +1,18 @@
-<html>
+<?php echo
+
+'<html>
 	
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
-		<link rel="stylesheet" type="text/css" href="/toxler/style.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
         <script type="text/javascript" src="prefixfree.min.js"></script>
 		<title>Toxler Test Environment</title>
 	</head>
 
 		<body>
         <h1>Welcome to the Toxler Effect Test Environment</h1>
-		<div class="fixPoint">
-		<?php
+		<div class="fixPoint">';
+
 			if(isset($_POST['dist']) and isset($_POST['size']) and isset($_POST['blur'])){
 				$distance = $_POST['dist'];
 				$size = $_POST['size'];
@@ -22,8 +24,7 @@
 			}
 			//$step = $size/($distance/90);
 			for ($i = 0; $i < 360; $i+=30) {
-				echo '<div class="circle" style="transform: rotate('.$i.'deg) translate('.$distance.'px);
-				width: '.$size.'px; height: '.$size.'px; -webkit-filter: blur('.$blur.'px);" ></div>';
+				echo "<div class='circle' style='transform: rotate(".$i."deg) translate(".$distance."px); width: ".$size."px; height: ".$size."px; -webkit-filter: blur(".$blur."px);' ></div>";
 			}
 			
 			
@@ -34,7 +35,8 @@
 			$current .= $size."\t".$distance."\t".$blur.PHP_EOL;
 			// Write the contents back to the file
 			file_put_contents($file, $current);
-		?>
-		</div>
+		echo
+		'</div>
 		</body>
-</html>
+</html>'
+?>
