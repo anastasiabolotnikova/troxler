@@ -1,0 +1,34 @@
+<html>
+	
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+		<link rel="stylesheet" type="text/css" href="style.css" />
+        <script type="text/javascript" src="prefixfree.min.js"></script>
+		<title>Toxler Test Environment</title>
+	</head>
+
+		<body>
+        <h1>Welcome to the Toxler Effect Test Environment</h1>
+		<div class="fixPoint">
+			<?php
+			if(isset($_POST['dist']) and isset($_POST['size']) and isset($_POST['blur']) and isset($_POST['color'])){
+				$distance = $_POST['dist'];
+				$size = $_POST['size'];
+				$blur = $_POST['blur'];
+				$color = $_POST['color'];
+			} else {
+				$distance = 160;
+				$size = 10;
+				$blur = 5;
+				$color = 'blue';
+			}
+			//$step = $size/($distance/90);
+			for ($i = 0; $i < 360; $i+=30) {
+				echo '<div class="circle" style="transform: rotate('.$i.'deg) translate('.$distance.'px);
+				width: '.$size.'px; height: '.$size.'px; -webkit-filter: blur('.$blur.'px);
+				background-color: '.$color.';" ></div>';
+			}
+		?>
+		</div>
+		</body>
+</html>
