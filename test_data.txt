@@ -1,1 +1,1 @@
-10	160	5
+Circle_size	Distance_from_center	Bluriness	Color	Time

@@ -1,6 +1,8 @@
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+		<script type="text/javascript" src="jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<title>Toxler Test Environment</title>
 	</head>
@@ -9,7 +11,7 @@
 		<form target="toxler" action="toxler.phtml" method="POST">
 			<div class="parameters">
 				<label>Choose size:</label>
-				<select name="size">
+				<select id="sel_size" name="size" onchange="prepareVars()">
 				<option value="10">10</option>
 				<option value="30">30</option>
 				<option value="60">60</option>
@@ -17,7 +19,7 @@
 				</select>
 			
 			<label>Choose distance:</label>
-			<select name="dist">
+			<select id="sel_dist" name="dist" onchange="prepareVars()">
 			<option value="160">160</option>
 			<option value="130">130</option>
 			<option value="190">190</option>
@@ -25,14 +27,14 @@
 			</select>
 			
 			<label>Choose blur:</label>
-			<select name="blur">
+			<select id="sel_blur" name="blur" onchange="prepareVars()">
 			<option value="5">5</option>
 			<option value="10">10</option>
 			<option value="15">15</option>
 			</select>
 			
 			<label>Choose color:</label>
-			<select name="color">
+			<select id="sel_color" name="color" onchange="prepareVars()">
 			<option value="blue">BLUE</option>
 			<option value="green">GREEN</option>
 			<option value="red">RED</option>
@@ -40,10 +42,10 @@
 			</div>
 			<input class="form-submit" type="submit" value="Redraw" />
 			</form>
-			<div class="time-label"><label id="timeHere">0000</label></div>
+			<div class="time-label"><label id="timeHere" >0000</label></div>
 			<input id="butt" class="button" type="button" onclick="timeStart()" value="Start">
+			<input id="butt" class="button" type="button" onclick="saveData()" value="Save">
 			
-		<script type="text/javascript" src="script.js"></script>
 		</div>
 		</body>
 </html>
