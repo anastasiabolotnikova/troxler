@@ -1,4 +1,5 @@
-<html>
+<?php echo
+'<html>
 	
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
@@ -9,8 +10,8 @@
 
 		<body>
         <h1>Welcome to the Toxler Effect Test Environment</h1>
-		<div class="fixPoint">
-			<?php
+		<div class="fixPoint">';
+			//<?php
 			if(isset($_POST['dist']) and isset($_POST['size']) and isset($_POST['blur']) and isset($_POST['color'])){
 				$distance = $_POST['dist'];
 				$size = $_POST['size'];
@@ -28,7 +29,8 @@
 				width: '.$size.'px; height: '.$size.'px; -webkit-filter: blur('.$blur.'px);
 				background-color: '.$color.';" ></div>';
 			}
-		?>
-		</div>
+		
+		echo
+		'</div>
 		</body>
-</html>
+</html>';
