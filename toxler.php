@@ -10,7 +10,7 @@
 
 		<body>
         <h1>Welcome to the Toxler Effect Test Environment</h1>
-		<div class="fixPoint">';
+		<div class="toxler"> <div class="fixPoint"></div>';
 			//<?php
 			if(isset($_POST['dist']) and isset($_POST['size']) and isset($_POST['blur']) and isset($_POST['color'])){
 				$distance = $_POST['dist'];

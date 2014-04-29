@@ -1,14 +1,15 @@
-.fixPoint {
+.toxler {
     position: relative;
     height:5px;
     width:5px;
     padding: 20%;
-    margin: 0 auto;
+    margin: auto;
     top: 5%;
 }
 
-.fixPoint:before {
+.toxler .fixPoint {
     position: absolute;
+    margin: auto ;
     height: 5px;
     width: 5px;
     border-radius: 250px;
@@ -16,10 +17,9 @@
     content: "";
 }
 
-.circle {
+.toxler .circle {
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	margin: auto;
     border-radius: 250px;
     display: block;
     overflow: hidden;

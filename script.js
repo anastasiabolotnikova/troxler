@@ -2,8 +2,10 @@ var start = null;
 
 function timeStart(){
 	start = new Date().getTime();
+	document.getElementById('timeHere').innerHTML = "0000";
 	document.getElementById('butt').onclick = function(){(timeStop())};
 	document.getElementById('butt').value = "Stop";
+
 }
 var sel_time = null;
 function timeStop(){
