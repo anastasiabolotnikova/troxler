@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+		<script type="text/javascript" src="../jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="../script.js"></script>
+		<link rel="stylesheet" type="text/css" href="../style.css" />
+		<title>Toxler Test Environment</title>
+	</head>
+		<body>
+			<h3>Testing blurriness impact</h3>
+		<div>
+		<form target="toxler" action="../toxler.php" method="POST">
+			<div class="parameters">
+				<label>Choose test:</label>
+				<select id="sel_blur" name="blur" onchange="prepareVars()" style="width:125px">
+				<option value="10">Test 1: blurr 10</option>
+				<option value="15">Test 2: blurr 15</option>
+				<option value="20">Test 3: blurr 20</option>
+				<option value="25">Test 4: blurr 25</option>
+				<option value="30">Test 5: blurr 30</option>
+				</select>
+			</div>
+			<input class="form-submit" type="submit" value="Redraw" />
+		</form>
+		<div class="time-label"><label id="timeHere" >0000</label></div>
+		<input id="butt" class="button" type="button" onclick="timeStart()" value="Start">
+		<input id="butt" class="button" type="button" onclick="saveData()" value="Save">
+			
+		</div>
+		</body>
+</html>

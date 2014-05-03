@@ -7,6 +7,29 @@
 		<title>Toxler Test Environment</title>
 	</head>
 		<body>
+			
+		<div class="test-label">
+			<label>
+				<a href="tests/blurr_impact_test.html">Test blurr impact</a>
+			</label>
+		</div>
+		<div class="test-label">
+			<label>
+				<a href="tests/size_impact_test.html">Test size impact</a>
+			</label>
+		</div>
+		<div class="test-label">
+			<label>
+				<a href="tests/distance_impact_test.html">Test distance impact</a>
+			</label>
+		</div>
+		<div class="test-label">
+			<label>
+				<a href="tests/color_impact_test.html">Test color impact</a>
+			</label>
+		</div>
+
+		<h3>Or set your own parameters</h3>
 		<div>
 		<form target="toxler" action="toxler.php" method="POST">
 			<div class="parameters">
@@ -28,9 +51,11 @@
 			
 			<label>Choose blur:</label>
 			<select id="sel_blur" name="blur" onchange="prepareVars()">
-			<option value="5">5</option>
 			<option value="10">10</option>
 			<option value="15">15</option>
+			<option value="20">20</option>
+			<option value="25">25</option>
+			<option value="30">30</option>
 			</select>
 			
 			<label>Choose color:</label>

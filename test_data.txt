@@ -1,5 +1,2 @@
 Circle_size	Distance_from_center	Bluriness	Color	Time
-10	160	5	blue	1683
-10	160	10	blue	698
-10	160	10	blue	698
-10	160	10	blue	578
+10	160	5	blue	418
