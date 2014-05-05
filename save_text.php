@@ -25,7 +25,7 @@ if(isset($_POST['size'])){
 	if($_POST['blur']!=null){
 		$blur = $_POST['blur'];
 	} else {
-		$blur = 10; //default blur
+		$blur = 15; //default blur
 	}
 }else if(isset($_POST['color'])){
 	$test_subj = 'color';
