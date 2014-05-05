@@ -30,21 +30,21 @@
 			else if (isset($_POST['color'])){
 				$distance = 160;
 				$size = 30;
-				$blur = 10;
+				$blur = 15;
 				$color = $_POST['color'];
 			} 
 			// testing size impact
 			else if (isset($_POST['size'])){
 				$distance = 160;
 				$size = $_POST['size'];
-				$blur = 10;
+				$blur = 15;
 				$color = "blue";
 			} 
 			// testing distance impact
 			else if (isset($_POST['dist'])){
 				$distance = $_POST['dist'];
 				$size = 30;
-				$blur = 10;
+				$blur = 15;
 				$color = "blue";
 			} 
 			// Default param-s
