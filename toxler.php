@@ -51,7 +51,7 @@
 			else {
 				$distance = 160;
 				$size = 30;
-				$blur = 10;
+				$blur = 15;
 				$color = 'blue';
 			}
 			//$step = $size/($distance/90);
