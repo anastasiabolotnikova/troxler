@@ -1,0 +1,43 @@
+<h3>Or set your own parameters</h3>
+		<div>
+		<form target="toxler" action="toxler.php" method="POST">
+			<div class="parameters">
+				<label>Choose size:</label>
+				<select id="sel_size" name="size" onchange="prepareVars()">
+				<option value="10">10</option>
+				<option value="30">30</option>
+				<option value="60">60</option>
+				<option value="90">90</option>
+				</select></br>
+			
+			<label>Choose distance:</label>
+			<select id="sel_dist" name="dist" onchange="prepareVars()">
+			<option value="160">160</option>
+			<option value="130">130</option>
+			<option value="190">190</option>
+			<option value="220">220</option>
+			</select></br>
+			
+			<label>Choose blur:</label>
+			<select id="sel_blur" name="blur" onchange="prepareVars()">
+			<option value="10">10</option>
+			<option value="15">15</option>
+			<option value="20">20</option>
+			<option value="25">25</option>
+			<option value="30">30</option>
+			</select></br>
+			
+			<label>Choose color:</label>
+			<select id="sel_color" name="color" onchange="prepareVars()">
+			<option value="blue">BLUE</option>
+			<option value="green">GREEN</option>
+			<option value="red">RED</option>
+			</select></br>
+			</div>
+			<input class="form-submit" type="submit" value="Redraw" />
+			</form>
+			<div class="time-label"><label id="timeHere" >0000</label></div>
+			<input id="butt" class="button" type="button" onclick="timeStart()" value="Start">
+			<input id="butt" class="button" type="button" onclick="saveData()" value="Save">
+			
+		</div>

@@ -37,7 +37,7 @@ function saveData(){
         dataType:   'json',
         data:       { size: sel_size, dist: sel_dist, blur: sel_blur, color: sel_color, time: sel_time },
         success:    function(data) {
-            alert(data);
+            alert("Changes saved");
         }
     });
 }

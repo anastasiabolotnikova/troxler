@@ -1,23 +1,23 @@
 <html>
 	<head>
 		<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
-		<script type="text/javascript" src="../jquery-2.1.0.min.js"></script>
-		<script type="text/javascript" src="../script.js"></script>
-		<link rel="stylesheet" type="text/css" href="../style.css" />
+		<script type="text/javascript" src="jquery-2.1.0.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css" />
 		<title>Toxler Test Environment</title>
 	</head>
 		<body>
 			<h3>Testing distance impact</h3>
 		<div>
-		<form target="toxler" action="../toxler.php" method="POST">
+		<form target="toxler" action="toxler.php" method="POST">
 			<div class="parameters">
 				<label>Choose test:</label>
 				<select id="sel_dist" name="dist" onchange="prepareVars()" style="width:125px">
-				<option value="100">Test 1: distance 100</option>
-				<option value="130">Test 2: distance 130</option>
-				<option value="160">Test 3: distance 160</option>
-				<option value="190">Test 4: distance 190</option>
-				<option value="220">Test 5: distance 220</option>
+				<option value="100">Test 2: 100px</option>
+				<option value="130">Test 3: 130px</option>
+				<option value="160" selected="sel">Test 1: 160px</option>
+				<option value="190">Test 4: 190px</option>
+				<option value="220">Test 5: 220px</option>
 				</select>
 			</div>
 			<input class="form-submit" type="submit" value="Redraw" />
