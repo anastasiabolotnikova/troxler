@@ -23,19 +23,58 @@ var sel_dist = null;
 var sel_blur = null;
 var sel_color = null;
 
-function prepareVars() {
+function prepareSize() {
     sel_size = $('#sel_size').val();
+}
+function prepareDist() {
 	sel_dist = $('#sel_dist').val();
+}
+function prepareBlur() {
 	sel_blur = $('#sel_blur').val();
+}
+function prepareColor() {
 	sel_color = $('#sel_color').val();
 }
 
-function saveData(){
+function saveSize(){
 	$.ajax({
         url:        'save_text.php',
         type:       'POST',
         dataType:   'json',
-        data:       { size: sel_size, dist: sel_dist, blur: sel_blur, color: sel_color, time: sel_time },
+        data:       { size: sel_size, time: sel_time },
+        success:    function(data) {
+            alert("Changes saved");
+        }
+    });
+}
+function saveDist(){
+	$.ajax({
+        url:        'save_text.php',
+        type:       'POST',
+        dataType:   'json',
+        data:       { dist: sel_dist, time: sel_time },
+        success:    function(data) {
+            alert("Changes saved");
+        }
+    });
+}
+function saveBlur(){
+	$.ajax({
+        url:        'save_text.php',
+        type:       'POST',
+        dataType:   'json',
+        data:       { blur: sel_blur, time: sel_time },
+        success:    function(data) {
+            alert("Changes saved");
+        }
+    });
+}
+function saveColor(){
+	$.ajax({
+        url:        'save_text.php',
+        type:       'POST',
+        dataType:   'json',
+        data:       { color: sel_color, time: sel_time },
         success:    function(data) {
             alert("Changes saved");
         }

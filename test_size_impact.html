@@ -12,7 +12,7 @@
 		<form target="toxler" action="toxler.php" method="POST">
 			<div class="parameters">
 				<label>Choose test:</label>
-				<select id="sel_size" name="size" onchange="prepareVars()" style="width:125px">
+				<select id="sel_size" name="size" onchange="prepareSize()" style="width:125px">
 				<option value="20">Test 2: 20px</option>
 				<option value="30" selected="sel">Test 1: 30px</option>
 				<option value="40">Test 3: 40px</option>
@@ -24,7 +24,7 @@
 		</form>
 		<div class="time-label"><label id="timeHere" >0000</label></div>
 		<input id="butt" class="button" type="button" onclick="timeStart()" value="Start">
-		<input id="butt" class="button" type="button" onclick="saveData()" value="Save">
+		<input id="butt" class="button" type="button" onclick="saveSize()" value="Save">
 			
 		</div>
 		</body>
