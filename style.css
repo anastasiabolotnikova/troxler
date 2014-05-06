@@ -28,7 +28,7 @@
 
 h1,h2,h3 {text-align:center;font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;}
 
-a {font-size:50%;text-decoration:none;font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;color: black;}
+a{text-decoration: none;}
 
 .button{
 	font-weight: bold;
@@ -97,7 +97,8 @@ a {font-size:50%;text-decoration:none;font-family:"Lucida Sans Unicode", "Lucida
 .test-label{
 	font-weight: bold;
 	margin-top: 5px;
-	width: 100%;
+	margin-left: auto;
+	width: 277px;
 	height: 30px;
 	color: #3b3b3b;
 	background: #B6DAF4;
@@ -108,11 +109,23 @@ a {font-size:50%;text-decoration:none;font-family:"Lucida Sans Unicode", "Lucida
 	border-top-color: #5a5a5a;
 }
 
+.test-label label {
+	font-size: 50%;
+	color: black;
+}
+
+.test-label label:hover{
+	font-size: 50%;
+	color: black;
+	cursor: pointer;
+}
+
 .menu{
 	font-weight: bold;
 	margin-top: 15px;
+	margin-left: auto;
 	font-size:50%;
-	width: 100%;
+	width: 277px;
 	height: 40px;
 	color: #3b3b3b;
 	background: #69B8F0;
