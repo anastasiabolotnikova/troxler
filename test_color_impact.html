@@ -8,12 +8,12 @@
 	</head>
 		<body>
 
-		<a href="data.html"><div class="test-label"><label>Back to the Menu</label></div></a>
+		<a href="data.html"><div class="test-label align"><label>Back to the Menu</label></div></a>
 		
-		<h3>Testing color impact</h3>
+		<h3 class="align">Testing color impact</h3>
 		<div>
 		<form target="toxler" action="toxler.php" method="POST">
-			<div class="parameters">
+			<div class="parameters align">
 				<label>Choose test:</label>
 				<select id="sel_color" name="color" onchange="prepareColor()" style="width:125px">
 				<option value="blue">Test 1: BLUE</option>
@@ -23,11 +23,11 @@
 				<option value="orange">Test 5: ORANGE</option>
 				</select>
 			</div>
-			<input class="form-submit" type="submit" value="Redraw" />
+			<input class="form-submit align" type="submit" value="Redraw" />
 		</form>
-		<div class="time-label"><label id="timeHere" >0000</label></div>
-		<input id="butt" class="button" type="button" onclick="timeStart()" value="Start">
-		<input id="butt" class="button" type="button" onclick="saveColor()" value="Save">
+		<div class="time-label align"><label id="timeHere" >0000</label></div>
+		<input id="butt" class="button align" type="button" onclick="timeStart()" value="Start">
+		<input id="butt" class="button align" type="button" onclick="saveColor()" value="Save">
 			
 		</div>
 		</body>

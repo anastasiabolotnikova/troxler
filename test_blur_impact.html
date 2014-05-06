@@ -8,13 +8,13 @@
 	</head>
 		<body>
 
-		<a href="data.html"><div class="test-label"><label>Back to the Menu</label></div></a>
+		<a href="data.html"><div class="test-label align"><label>Back to the Menu</label></div></a>
 
-		<h3>Testing blurriness impact</h3>
+		<h3 class="align">Testing blurriness impact</h3>
 
 		<div>
 		<form target="toxler" action="toxler.php" method="POST">
-			<div class="parameters">
+			<div class="parameters align">
 				<label>Choose test:</label>
 				<select id="sel_blur" name="blur" onchange="prepareBlur()" style="width:125px">
 				<option value="15">Test 1: 15px</option>
@@ -24,11 +24,11 @@
 				<option value="30">Test 5: 30px</option>
 				</select>
 			</div>
-			<input class="form-submit" type="submit" value="Redraw" />
+			<input class="form-submit align" type="submit" value="Redraw" />
 		</form>
-		<div class="time-label"><label id="timeHere" >0000</label></div>
-		<input id="butt" class="button" type="button" onclick="timeStart()" value="Start">
-		<input id="butt" class="button" type="button" onclick="saveBlur()" value="Save">
+		<div class="time-label align"><label id="timeHere" >0000</label></div>
+		<input id="butt" class="button align" type="button" onclick="timeStart()" value="Start">
+		<input id="butt" class="button align" type="button" onclick="saveBlur()" value="Save">
 			
 		</div>
 		</body>

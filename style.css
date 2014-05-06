@@ -32,10 +32,6 @@ a{text-decoration: none;}
 
 .button{
 	font-weight: bold;
-	display: block;
-	margin-left: 10%;
-	width: 80%;
-	max-width: 230px;
 	margin-top: 5px;
 	height: 30px;
 	color: #3b3b3b;
@@ -45,20 +41,26 @@ a{text-decoration: none;}
 }
 
 .time-label{
-	margin-top: 100px;
-	width: 100%;
+	margin-top: 70px;
 	height: 60px;
 	color: #3b3b3b;
 	background: #B6DAF4;
 	text-align: center;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 30px;
-	border: 2px solid #5a5a5a;
+	border: 1px solid;
 	border-top-color: #5a5a5a;
+}
+
+.align{
+	margin-left: 10%;
+	width: 80%;
+	max-width: 230px;
 }
 
 .parameters{
 	width: 100%;
+	max-width: 280px;
     text-align: right;
 	margin-left: 5px;
 	margin-top: 30px;
@@ -85,23 +87,17 @@ a{text-decoration: none;}
 .form-submit {
 	font-weight: bold;
 	display: block;
-	margin-left: 10%;
 	margin-top: 10px;
 	height: 30px;
 	color: #3b3b3b;
 	background: #69B8F0;
 	border: 1px solid #5a5a5a;
 	border-top-color: #5a5a5a;
-	width: 80%;
-	max-width: 230px;
 }
 
 .test-label{
 	font-weight: bold;
 	margin-top: 5px;
-	margin-left: 10%;
-	width: 80%;
-	max-width: 230px;
 	height: 30px;
 	color: #3b3b3b;
 	background: #B6DAF4;
@@ -126,10 +122,7 @@ a{text-decoration: none;}
 .menu{
 	font-weight: bold;
 	margin-top: 15px;
-	margin-left: 10%;
 	font-size:50%;
-	width: 80%;
-	max-width: 230px;
 	height: 40px;
 	color: #3b3b3b;
 	background: #69B8F0;
