@@ -33,14 +33,15 @@ a{text-decoration: none;}
 .button{
 	font-weight: bold;
 	display: block;
-	margin-left: 15%;
+	margin-left: 10%;
+	width: 80%;
+	max-width: 230px;
 	margin-top: 5px;
 	height: 30px;
 	color: #3b3b3b;
 	background: #69B8F0;
 	border: 1px solid #5a5a5a;
 	border-top-color: #5a5a5a;
-	width: 60%;
 }
 
 .time-label{
@@ -84,21 +85,23 @@ a{text-decoration: none;}
 .form-submit {
 	font-weight: bold;
 	display: block;
-	margin-left: 15%;
+	margin-left: 10%;
 	margin-top: 10px;
 	height: 30px;
 	color: #3b3b3b;
 	background: #69B8F0;
 	border: 1px solid #5a5a5a;
 	border-top-color: #5a5a5a;
-	width: 65%;
+	width: 80%;
+	max-width: 230px;
 }
 
 .test-label{
 	font-weight: bold;
 	margin-top: 5px;
-	margin-left: auto;
-	width: 277px;
+	margin-left: 10%;
+	width: 80%;
+	max-width: 230px;
 	height: 30px;
 	color: #3b3b3b;
 	background: #B6DAF4;
@@ -123,9 +126,10 @@ a{text-decoration: none;}
 .menu{
 	font-weight: bold;
 	margin-top: 15px;
-	margin-left: auto;
+	margin-left: 10%;
 	font-size:50%;
-	width: 277px;
+	width: 80%;
+	max-width: 230px;
 	height: 40px;
 	color: #3b3b3b;
 	background: #69B8F0;
