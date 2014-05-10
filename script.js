@@ -80,3 +80,17 @@ function saveColor(){
         }
     });
 }
+
+$(function() {
+    $('.btn').click(function() {
+        $('.instructions').slideToggle(callbackFn);
+
+        function callbackFn(){
+
+             $(this).is(":visible") ? 
+                $(".btn label").text("Hide instructions") : 
+                $(".btn label").text("Show instructions");
+
+        }
+    });
+});

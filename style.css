@@ -1,3 +1,4 @@
+
 .toxler {
     position: relative;
     height:5px;
@@ -26,23 +27,27 @@
     margin: -15px;
 }
 
-h1,h2,h3 {text-align:center;font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+h1,h2,h3 {text-align:center;font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;white-space: nowrap;}
 
-a{text-decoration: none;}
+a{text-decoration: none;white-space: nowrap;}
+
 
 .button{
 	font-weight: bold;
 	margin-top: 5px;
 	height: 30px;
+	width: 250px;
 	color: #3b3b3b;
 	background: #69B8F0;
 	border: 1px solid #5a5a5a;
 	border-top-color: #5a5a5a;
+	white-space: nowrap;
 }
 
 .time-label{
 	margin-top: 70px;
 	height: 60px;
+	width: 250px;
 	color: #3b3b3b;
 	background: #B6DAF4;
 	text-align: center;
@@ -50,11 +55,11 @@ a{text-decoration: none;}
 	font-size: 30px;
 	border: 1px solid;
 	border-top-color: #5a5a5a;
+	white-space: nowrap;
 }
 
 .align{
 	margin-left: 10%;
-	width: 80%;
 	max-width: 230px;
 }
 
@@ -68,12 +73,14 @@ a{text-decoration: none;}
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 14px;
 	font-weight: bold;
+	white-space: nowrap;
 	
 }
 
 .parameters label{
 	float: left;
     margin: 1px;
+    white-space: nowrap;
 }
 
 .parameters select{
@@ -82,6 +89,7 @@ a{text-decoration: none;}
 	color: #3b3b3b;
 	background: #B6DAF4;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	white-space: nowrap;
 }
 
 .form-submit {
@@ -89,28 +97,34 @@ a{text-decoration: none;}
 	display: block;
 	margin-top: 10px;
 	height: 30px;
+	width: 250px;
 	color: #3b3b3b;
 	background: #69B8F0;
 	border: 1px solid #5a5a5a;
 	border-top-color: #5a5a5a;
+	white-space: nowrap;
 }
 
 .test-label{
 	font-weight: bold;
 	margin-top: 5px;
 	height: 30px;
+	width: 250px;
+	line-height: 30px;
 	color: #3b3b3b;
 	background: #B6DAF4;
 	text-align: center;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	font-size: 30px;
-	border: 2px solid #5a5a5a;
+	border: 1px solid #5a5a5a;
 	border-top-color: #5a5a5a;
+	white-space: nowrap;
 }
 
 .test-label label {
 	font-size: 50%;
 	color: black;
+	white-space: nowrap;
 }
 
 .test-label label:hover{
@@ -124,6 +138,7 @@ a{text-decoration: none;}
 	margin-top: 15px;
 	font-size:50%;
 	height: 40px;
+	width: 250px;
 	color: #3b3b3b;
 	background: #69B8F0;
 	text-align: center;
@@ -131,5 +146,18 @@ a{text-decoration: none;}
 	font-size: 30px;
 	border: 1px solid #5a5a5a;
 	border-top-color: #5a5a5a;
+	white-space: nowrap;
 }
 
+.btn{
+	display: inline-block;
+	cursor: pointer;
+	margin-top: 70px;
+	white-space: nowrap;
+}
+
+
+.instructions{
+	padding-left: 5%;
+	/*display: none;*/
+}

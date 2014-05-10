@@ -17,18 +17,33 @@
 				<label>Choose test:</label>
 				<select id="sel_size" name="size" onchange="prepareSize()" style="width:125px">
 					<option value="30" selected="sel">Test 1: 30px</option>
-					<option value="25">Test 2: 25px</option>
-					<option value="20">Test 3: 20px</option>
-					<option value="15">Test 4: 15px</option>
-					<option value="10">Test 5: 10px</option>				
+					<option value="20">Test 2: 20px</option>
+					<option value="10">Test 3: 10px</option>				
 				</select>
 			</div>
 			<input class="form-submit align" type="submit" value="Redraw" />
 		</form>
 		<div class="time-label align"><label id="timeHere" >0000</label></div>
-		<input id="butt" class="button align" type="button" onclick="timeStart()" value="Start">
-		<input id="butt" class="button align" type="button" onclick="saveSize()" value="Save">
+		<div><input id="butt" class="button align" type="button" onclick="timeStart()" value="Start"></div>
+		<div><input id="butt" class="button align" type="button" onclick="saveSize()" value="Save"></div>
 			
 		</div>
+
+		<div class="test-label align btn"><label>Hide instructions</label></div>
+
+		<div class="instructions">
+			<ol>
+				<li>Do not make significant eye movements, <br> blink or look anywhere else except for <br> the black dot in the center</li>
+				<li>Make sure that the black dot in the <br> center is exactly at your eye level</li>
+				<li>The distance between you eyes and <br> the monitor should be the arm's length</li>
+				<li>In the begining place your mouse on the <br> Start button, but don't press it yet</li>
+				<li>Start concentrating on the black dot and <br> at the same time press the Start button</li>
+				<li>When the peripheral stimulus disappear <br> press the Start button again (it will switch <br> to Stop button automaticaly)</li>
+				<ul><li>If the stimulus did not disappear <br> or you have blinked or moved your <br> eyes - press Start and start over</li></ul>
+				<li>Press Save</li>
+			</ol>
+		</div>
+
+		
 		</body>
 </html>
