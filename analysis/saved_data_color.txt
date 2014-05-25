@@ -1,6 +1,0 @@
-color	time
-red	7506
-blue	5596
-green	3644
-yellow	5848
-orange	5514
