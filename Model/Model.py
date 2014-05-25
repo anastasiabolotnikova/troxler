@@ -4,9 +4,9 @@ from matplotlib import pyplot as plt
 import numpy as np
 
 
-d = 9000
+d = 2041
 
-s = d + 3000
+s = d + 2000
 
 end = s + 100
 
