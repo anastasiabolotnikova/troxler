@@ -86,7 +86,7 @@ def rm_anova(dec_rule, test_data, alf = 0.05):
     # Define Hypotheses
 
     null_hyp = 'Mean values under all '+str(a)+' conditions are equal'
-    alternative_hyp = 'The '+str(a)+' contidions differ significantly on time values, F('+str(DF_between)+', '+str(DF_error)+') = '+str(round(F,2))+', p='+str(alf)+'\n'
+    alternative_hyp = 'The '+str(a)+' contidions differ significantly on time values, F('+str(DF_between)+', '+str(DF_error)+') = '+str(round(F,2))+', p<'+str(alf)+'\n'
     
 
     # If F is grather than the value of decision rule, reject the null hypotheses
